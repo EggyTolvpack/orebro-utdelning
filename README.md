@@ -1,23 +1,36 @@
-# Örebro – gemensam utdelningskarta
+# Örebro – Utdelningskarta
 
 https://eggytolvpack.github.io/orebro-utdelning/
 
-Adolfsberg (597), Marieberg (344) Gamla Vintrosavägen (296) och Sörby (289) på en karta. Totalt 1526 unika gatbitar. Välj ett område eller alla fyra. Statistik gäller valt område; GPS registrerar valt område eller alla fyra när Alla är valt.
+GPS-app för Adolfsberg, Marieberg, Gamla Vintrosavägen och Sörby. Totalt 1526 gatbitar. Områdesurvalen är praktiska karturval, inte officiella områdesgränser.
 
-Öppna i Safari, tryck Starta GPS och tillåt platsåtkomst. Dela → Lägg till på hemskärmen ger en appgenväg. Internet krävs; GPS kan pausas när sidan är i bakgrunden eller skärmen är låst.
+## Körning och utdelning
 
-Vid första öppningen kopieras tidigare färdiga markeringar och provpunkter från de tidigare kartornas lokala lagring i samma webbläsare på eggytolvpack.github.io. Gamla appar ändras inte och fortsatt synkronisering görs inte. Saknas lokal historik kan respektive apps JSON-säkerhetskopia importeras; färdiga markeringar läggs till utan att befintliga tas bort. Export ger en gemensam säkerhetskopia. Nollställ gäller valt område, eller allt om Alla fyra områden är valt.
+- Grönt: kört. Under en ny runda visas tidigare körda gatbitar streckat gröna.
+- Gult: delvis kört. Tidigare delvis körda sträckor ligger också kvar.
+- Lila: reklam utdelad, alltid markerad manuellt.
+- Rött: inte markerad körd. Turkost: den visade rundans sparade GPS-körspår.
+- Tryck på en gatbit för att markera körning eller utdelning separat. Den ena markeringen är inte automatiskt bevis för den andra.
+- Tona ned utdelat gör markeringarna svagare, men inga körda gator döljs helt.
 
-Områdesurvalen är samma som de fyra områdesurvalen och är inte officiella områdesgränser. Grönt betyder GPS-täckt eller manuellt markerat, inte bekräftad utdelning. Detta är en täckningskarta, inte optimerad körordning.
+## Rundor
 
-© OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright . Leaflet 1.9.4.
+Starta runda + GPS skapar eller återupptar en runda. Pausa stoppar GPS och tidtagning. Avsluta runda sparar den i historiken. Ny runda raderar aldrig äldre körhistorik. Sparade rundor kan väljas under Rundor och säkerhetskopia. Tid, körd sträcka, gatmarkeringar och körspår sparas. Vid omladdning återställs en pågående runda pausad; återuppta GPS med Fortsätt runda.
 
-## Sörby
+GPS markerar gatbitar efter minst 75 procent täckning av provpunkter inom 18 meter och uppgiven noggrannhet högst 35 meter. För svag GPS och orimliga GPS-hopp registreras inte som körning. Körspåret bryts vid paus, dålig signal eller mer än 30 sekunder mellan användbara positioner. Avstånd är en GPS-baserad uppskattning, inte en exakt vägmätare.
 
-Villagator kring Gärdesgatan, Fältvägen, Jeremiasvägen och Herdevägen. Praktiskt urval mellan Hagmarksgatan, Landstormsvägen, Studievägen och Rudbecksgatan; inte en officiell områdesgräns. Polygonurval filtrerar bort angränsande kvarter. Timjanvägen i Sörbyängen undantas. Offentliga OSM-data hämtade 2026-10-15: https://www.openstreetmap.org/api/0.6/map?bbox=15.20,59.245,15.245,59.268 . Samma vägtyps- och tillträdesfilter som tidigare.
+## Skärm och GPS
 
+Starta GPS aktiverar följning och gatunivå. Färdriktningen visas som en pil när du rör dig. Dra kartan för fri vy, tryck Följ mig för att följa igen. Dölj meny ger full kartvy med Visa meny, Följ mig och GPS-status kvar. GPS-status visar god, svag eller förlorad signal.
 
-## Följning, färdriktning och kartvy
+Håll skärmen vaken används under en aktiv runda när webbläsaren stöder Screen Wake Lock. Appen visar om det misslyckas. Skärmlåset släpps vid paus eller avslut. Safari kan fortfarande pausa GPS i bakgrunden eller med låst skärm. Håll appen synlig under registrering.
 
-Starta GPS aktiverar följning och zoomar till gatunivå när positionen hittas. Din position placeras i den synliga delen av kartan under menyn. Om du drar kartan pausas följningen; tryck Följ mig för att återuppta. Dölj meny döljer hela panelen och teckenförklaringen. Visa meny och Följ mig finns kvar som små knappar. Riktningspilen använder GPS-kurs när du rör dig eller beräknar kurs från minst fem meters förflyttning. Vid stillastående behålls senaste färdriktning; detta är inte telefonens kompass.
+## Lagring och säkerhetskopior
 
+All historik och exakta körspår sparas lokalt i webbläsaren på enheten, inte i GitHub. Exportera regelbundet. Om lagringen är full visas en bestående varning; export använder även den ännu osparade historiken. Import lägger till markeringar och unika rundor utan att radera befintliga. Gamla säkerhetskopior fungerar.
+
+Befintliga körmarkeringar från tidigare appversioner bevaras med samma lagringsnyckel. Vid första öppningen hämtas även markeringar från de ursprungliga områdeskartorna om de finns i samma webbläsare på eggytolvpack.github.io. Apparna synkroniserar inte efter detta.
+
+Kräver internet för kartbakgrund och Leaflet. Öppna i Safari på iPhone och välj Dela → Lägg till på hemskärmen för en appgenväg.
+
+© OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright . Leaflet 1.9.4. Följ lokala skyltar. Grönt är körning, inte bekräftad utdelning. Detta är en täckningskarta, inte optimerad sväng-för-sväng-navigering.
