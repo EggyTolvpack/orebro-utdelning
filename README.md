@@ -34,3 +34,23 @@ Befintliga körmarkeringar från tidigare appversioner bevaras med samma lagring
 Kräver internet för kartbakgrund och Leaflet. Öppna i Safari på iPhone och välj Dela → Lägg till på hemskärmen för en appgenväg.
 
 © OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright . Leaflet 1.9.4. Följ lokala skyltar. Grönt är körning, inte bekräftad utdelning. Detta är en täckningskarta, inte optimerad sväng-för-sväng-navigering.
+
+## Fortsätt där du slutade
+
+Visa pauspunkt zoomar till den senaste sparade GPS-positionen där den visade rundan pausades. Punkten sparas även när sidan laddas om. Saknas en användbar GPS-position är knappen avstängd. En orange pausmarkör visas när rundan är pausad eller avslutad.
+
+## Återstående gatbitar
+
+Välj område och öppna Återstående gatbitar. Listan grupperas efter gatunamn och gäller den visade rundan, eller hela körhistoriken när ingen runda visas. Sök ett gatunamn, öppna gatans grupp och tryck på en gatbit för att zooma dit. Uppdatera listan vid behov under en pågående runda.
+
+## Korrigera GPS-felmarkeringar
+
+Tryck på en markerad gatbit och välj Korrigera felmarkering: inte körd. Efter bekräftelse tas dess körmarkering och provpunkter bort från aktuell karta och statistik. Hela sparade rundor raderas inte och manuell utdelning påverkas inte. Ångra senaste korrigering under Rundor och säkerhetskopia återställer den. En ny bekräftad körning eller manuell körmarkering kan markera gatbiten körd igen. Korrigeringar följer med i säkerhetskopian.
+
+## Stillastående och GPS-fluktuationer
+
+Automatisk körregistrering kräver nu tydlig förflyttning. GPS-hastighet under 0,5 m/s registreras inte som körning. Med rapporterad rörelse krävs 5–12 meters förflyttning beroende på noggrannhet; utan användbar hastighet krävs 12–25 meter. Första GPS-punkten, pauser, dålig signal och långa luckor startar om rörelsekontrollen. Detta minskar felmarkeringar när du står still, men GPS kan fortfarande visa fel nära parallella gator.
+
+## Påminnelse om säkerhetskopia
+
+Efter avslutad runda visas en påminnelse att exportera till Filer. Påminnelsen överlever omladdning och kan skjutas upp en timme. Äldre historik påminns också efter ett dygn utan export. Appen skapar en fil; kontrollera att du sparar den på önskad plats.
