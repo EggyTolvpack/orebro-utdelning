@@ -54,3 +54,8 @@ Automatisk körregistrering kräver nu tydlig förflyttning. GPS-hastighet under
 ## Påminnelse om säkerhetskopia
 
 Efter avslutad runda visas en påminnelse att exportera till Filer. Påminnelsen överlever omladdning och kan skjutas upp en timme. Äldre historik påminns också efter ett dygn utan export. Appen skapar en fil; kontrollera att du sparar den på önskad plats.
+
+## Sex områden och manuell flermarkering
+Ormesta (280 gatbitar) och Näsby (266) har lagts till från OpenStreetMap 2026-10-18. Områdena är praktiska bostadsgateurval och inte officiella områdesgränser. Tidigare gatu-ID och lagringsnyckel är oförändrade.
+Manuell markering: välj gatbitar, välj hel gata i popup, välj ruta med två hörn eller välj hela området. Granska blå markeringar och spara som kört. Hela ändringen kan ångras. Grönt betyder kört, inte bekräftat utdelat.
+
