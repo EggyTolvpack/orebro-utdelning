@@ -64,3 +64,6 @@ Manuell markering: välj gatbitar, välj hel gata i popup, välj ruta med två h
 Tillagt 2026-10-18. Praktiskt bostadsgateurval inom 59.311–59.3233 N, 15.210–15.248 E. Gator från OpenStreetMap; industriurval Filarevägen och Kabelvägen utelämnas. Samma historik, manuell flermarkering och säkerhetskopiering som övriga områden. Urvalet är inte en officiell stadsdelsgräns.
 Lillån föreslås som ett område att prova för röjning/bortforsling utifrån villabebyggelse och uppvuxna trädgårdar. Ingen klassificering av enskilda hushålls ålder, ekonomi eller hjälpbehov görs.
 
+
+Okörda gator visas med tydligare rött (#e00000), tjockare linjer och mindre nedtoning utanför valt område.
+
