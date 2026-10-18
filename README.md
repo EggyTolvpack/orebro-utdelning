@@ -67,3 +67,7 @@ Lillån föreslås som ett område att prova för röjning/bortforsling utifrån
 
 Okörda gator visas med tydligare rött (#e00000), tjockare linjer och mindre nedtoning utanför valt område.
 
+
+Mobiltryck: varje gatbit har en osynlig tryckyta på 44 bildpunkter. Närmaste gatbit i valt område väljs vid överlapp. Rutval kan göras även genom tryck på gator. Befintliga markeringar ändras inte.
+
+

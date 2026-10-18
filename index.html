@@ -103,4 +103,8 @@ $('manual-save').onclick=()=>{if(viewed||!manualSelected.size)return;const ids=[
 const oldAreaChange=$('area').onchange;$('area').onchange=e=>{clearManual();oldAreaChange(e);};
 updateManual();
 
+function nearestRoadAt(latlng){if(!latlng)return null;const p=map.latLngToLayerPoint(latlng);let best=null,bestDistance=26;for(const road of shownRoads()){const a=map.latLngToLayerPoint(road.a),b=map.latLngToLayerPoint(road.b),dx=b.x-a.x,dy=b.y-a.y,len=dx*dx+dy*dy,t=len?Math.max(0,Math.min(1,((p.x-a.x)*dx+(p.y-a.y)*dy)/len)):0,d=Math.hypot(p.x-a.x-t*dx,p.y-a.y-t*dy);if(d<bestDistance){bestDistance=d;best=road;}}return best;}
+function touchRoad(e,fallback){if(manualMode==='box')return;const road=nearestRoadAt(e?.latlng)||fallback;if(!road||!(area==='all'||road.areas.includes(area)))return;e?.originalEvent&&L.DomEvent?.stopPropagation(e.originalEvent);if(manualMode){pickRoad(road);return;}popup(road,layers[road.id]);}
+for(const road of ROADS){layers[road.id].off?.('click');layers[road.id].on('click',e=>touchRoad(e,road));L.polyline([road.a,road.b],{color:'#000',weight:44,opacity:0,interactive:true,bubblingMouseEvents:true,lineCap:'round',className:'road-touch-target'}).addTo(map).on('click',e=>touchRoad(e,road));}
+
 </script></body></html>
