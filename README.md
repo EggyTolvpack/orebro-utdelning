@@ -75,3 +75,8 @@ Mobiltryck: varje gatbit har en osynlig tryckyta på 44 bildpunkter. Närmaste g
 ## Förbättrat gatval på hela kartytan
 Tryck fångas på hela kartan och söker närmaste gatbit inom 32 bildpunkter. Alla synliga områdens gatbitar kan väljas oavsett områdesfilter. Om flera ligger tätt visas en lista med stora valknappar. Ingen körhistorik ändras av att bara välja eller öppna en gata.
 
+
+## Sträckor mellan korsningar och tydliga svängar
+Kartan väljer nu en sammanhängande sträcka. Noder med annan gatukoppling, namnbyte eller sväng på minst cirka 40 grader delar sträckan. Riktningen jämförs upp till 12 meter åt varje håll så även tätt punktindelade hörn fångas. Mjuka kurvor fortsätter som samma sträcka. Indelningen bygger på kartans tillgängliga gator och är inte en garanterad tolkning av alla verkliga korsningar.
+Tryck väljer närmaste sträcka direkt, utan lista över små gatbitar. Blå markering visar hela urvalet. Markera sträckan körd/utdelad med en knapp och ångra hela åtgärden. Alla tidigare gatu-ID och körmarkeringar bevaras. GPS registrerar fortfarande täckning på de ursprungliga smådelarna.
+
