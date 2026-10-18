@@ -71,3 +71,7 @@ Okörda gator visas med tydligare rött (#e00000), tjockare linjer och mindre ne
 Mobiltryck: varje gatbit har en osynlig tryckyta på 44 bildpunkter. Närmaste gatbit i valt område väljs vid överlapp. Rutval kan göras även genom tryck på gator. Befintliga markeringar ändras inte.
 
 
+
+## Förbättrat gatval på hela kartytan
+Tryck fångas på hela kartan och söker närmaste gatbit inom 32 bildpunkter. Alla synliga områdens gatbitar kan väljas oavsett områdesfilter. Om flera ligger tätt visas en lista med stora valknappar. Ingen körhistorik ändras av att bara välja eller öppna en gata.
+
